@@ -2,11 +2,9 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-
 #main-body{
     margin: 0;
 }
-
 #main-banner{
     display: flex;
     justify-content: space-between;
@@ -18,25 +16,28 @@ body{
 
     text-align: center;
 }
-
 .main-list{
     display: flex;
     justify-content: flex-start;
     flex-flow: row;
     list-style: none;
-    padding-left: -20px;
+    padding-left: 0px;
 }
 .benner-ul{
     display: flex;
     justify-content: flex-start;
     flex-flow: row;
     list-style: none;
-    padding-left: -20px;
+    margin: 10px;
+    padding: 0;
 }
 .benner-list{
     margin-right: 10px;
 }
+#main-article{
+    top: 70px;
+}
 .main-contents{
-    margin: 10%;
-    text-align: center;;
+    margin: 0;
+    height: 400px;
 }
