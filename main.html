@@ -7,32 +7,41 @@
 </head>
 <body>
    <div id="main-body">
-       <div id="main-banner">
-           <ul class="benner-ul">
-               <li class="benner-left">
+       <div id="main-banner" class="container_flex">
+           <ul class="benner-ul container_flex">
+               <li class="benner-items">
                    <input type="image" src="./image/mong.jpg" width="30px" height="30px">
                </li>
-               <li class="benner-left">
-                   <a href="">What do U want!</a>
+               <li class="benner-items">
+                   <a href="">Made by</a>
                </li>
-               <li class="benner-left">
-                   <a href="">About us!</a>
+               <li class="benner-items">
+                   <a href="">P.Rong</a>
                </li>
                <li id="page-logo">
-                   <input name="logo-img" type="image" src="./image/mong.jpg" width="100px" height="30px">
+                   <input name="logo-img" type="image" src="./image/mong.jpg" style="width: 100px; height: 30px">
                </li>
-               <li class="benner-right">
+               <li class="benner-items">
                    <a href="">log in</a>
                </li>
-               <li class="benner-right">
+               <li class="benner-items">
                    <a href="">sign up</a>
                </li>
            </ul>
        </div>
-       <div id="main-article">
-           <ul class="main-list">
-               <li class="main-contents">
-                   <input type="image" src="./image/mong.jpg" width="300px">
+       <div id="main-article" class="container_flex">
+           <ul class="main-list container_flex">
+               <li class="main-contents container_flex">
+                   <span class="inner-main-first">
+                       <input type="image" src="./image/mong.jpg" class="arrow-btn" onclick="moveLeft">
+                   </span>
+                   <span id="main-first-inner" class="inner-main-first" style="background-color: black; width: 85%; justify-content: center;">
+                       <input type="image" class="main-first-image" src="./image/mong.jpg">
+                       <input type="image" class="main-first-image" src="./image/mong.jpg">
+                   </span>
+                   <span class="inner-main-first">
+                   <input type="image" src="./image/mong.jpg" class="arrow-btn" onclick="moveRight">
+                   </span>
                </li>
                <li class="main-contents">
                    <iframe src="https://www.youtube.com/watch?v=OWARFeo-xPA" frameborder="0"></iframe>
