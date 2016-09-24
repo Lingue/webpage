@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+
+
+    <style type="text/css">
+        div{
+            display: block;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+        body{
+            width:100%;
+            left: 0;
+            top: 0;
+            overflow-x:hidden;
+        }
+        .container_flex {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .container_flex > .devider_flex_1{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
+        .flex_align_center{
+            justify-content: center;
+        }
+        .flex_align_left{
+            justify-content: flex-start;
+            margin-left: 30px;
+        }
+        .flex_align_right{
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+        .flex_align_around{
+            justify-content: space-around;
+        }
+        .flex_height_center{
+            align-content: center;
+        }
+        .flex_flow{
+            flex-flow: row wrap;
+        }
+
+        .container_header{
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 19999;
+            /*background: transparent;*/
+        }
+        .container_aside{
+            position: fixed;
+            float:left;
+            width: 230px;
+            height: 100%;
+            margin-top: 44px;
+
+        }
+        .container_section{
+            /*display: inline-flex;*/
+            /*flex:1;*/
+            /*float: left;*/
+            /*flex: 1;*/
+            /*width: 100%;*/
+            /*height:100%;*/
+            margin-top: 44px;
+            margin-left: 230px;
+        }
+
+        .border{
+            border-style:solid;
+            border-width: 0px 1px 1px 1px;
+            border-color: #e8e8e8;
+        }
+
+        .header_setting{
+            width: 100%;
+            min-width: 300px;
+            height: 44px;
+            background: white;
+        }
+
+        .color_gray{
+            background: gray;
+        }
+        .color_skyblue{
+            background: skyblue;
+        }
+        .devider_flex_1{
+            flex: 1;
+        }
+        #header > *{
+            height: 44px;
+            align-content: center;
+            font-size:170%;
+            font-style:normal;
+        }
+        #sub_header{
+            border-left: 0px;
+            border-top: 0px;
+        }
+        #main_list > a{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            border-style: solid;
+            border-width: 1px;
+        }
+        #mm>a{
+            height: 100px;
+            border-style:solid;
+            border-width: 1px;
+            display: block;
+        }
+        /*#mm:hover{
+            position:none;
+        }
+*/
+        @media all and (min-width: 600px){
+            #main_list{
+
+            }
+        }
+
+        @media all and (min-width: 800px){
+            #main_list{
+
+            }
+        }
+        /*flex-flow: <‘flex-direction’> || <‘flex-wrap’>*/
+        /*flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> */
+    </style>
+</head>
+<body>
+<div class="container_header header_setting border">
+    <div class="container_flex" id="header">
+        <div class="devider_flex_1 flex_align_left">
+            <a href="">aaa</a>
+        </div>
+        <div class="devider_flex_1 flex_align_center">
+            <a href="">aaa</a>
+        </div>
+        <div class="devider_flex_1 flex_align_right">
+            <a href="">aaa</a>
+        </div>
+    </div>
+</div>
+
+<div class="container_aside border" id="mm" style="overflow-y: auto" onblur="hide(this);" onfocus="reveal(this);">
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">bbbbbb</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <li onClick="makeBlack(this);">aaaaaa</li>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+    <a href="" style="width:100px">aaa</a>
+
+
+
+</div>
+<div class="container_section border">
+    <div class="header_setting border" id="sub_header">
+        <div class="container_flex flex_align_center" id="header">
+            <a href="" style="width:100px">aaa</a>
+            <a href="" style="width:100px">aaa</a>
+            <a href="" style="width:100px">aaa</a>
+        </div>
+    </div>
+    <div class="container_flex flex_align_center flex_flow" id="main_list">
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+        <a href="">aaa</a>
+
+
+        <!-- flex-flow: row wrap -->
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript">
+    function makeBlack(element){
+        $(element).css("background-color", "black");
+    }
+    function hide(element){
+        // $("#mm").css("overflow-y","hidden");
+        console.log(element);
+        $(element).css("overflow-y","hidden");
+    }
+    function reveal(element){
+        // $("#mm").css("overflow-y","auto");
+        $(element).css("overflow-y","auto");
+    }
+</script>
+</body>
+</html>
