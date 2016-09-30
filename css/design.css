@@ -19,7 +19,7 @@ body{
     display: -webkit-flex;
     display: flex;
 }
-.container_flex > .devider_flex_1{
+.container_flex > .viewer_flex{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -45,15 +45,23 @@ body{
 }
 .flex_flow{
     flex-flow: row wrap;
+
 }
-/* 
+/*::-webkit-scrollbar*/
+/*::-webkit-scrollbar-button*/
+/*::-webkit-scrollbar-track*/
+/*::-webkit-scrollbar-track-piece*/
+/*::-webkit-scrollbar-thumb*/
+/*::-webkit-scrollbar-corner*/
+/*::-webkit-resizer*/
+
 .container_header{
     position: fixed;
     left: 0;
     top: 0;
     z-index: 19999;
     background: transparent;
-} */
+}
 /* .container_aside{
     position: fixed;
     float:left;
@@ -62,11 +70,16 @@ body{
     margin-top: 44px;
 
 } */
+.mCustomScrollbar{ -ms-touch-action: pinch-zoom; touch-action: pinch-zoom; /* direct pointer events to js */ }
 .container_rounded_edge{
 	border-radius: 30px;
 	width:95%;
 	height:100%;
-
+    /*-webkit-transition: prop time;*/
+    /*-moz-transition: prop time;*/
+    /*-ms-transition: prop time;*/
+    /*-o-transition: prop time;*/
+    /*transition: ;*/
 }
 
 /* .container_section{
@@ -93,7 +106,7 @@ body{
 .color_skyblue{
     background: skyblue;
 }
-.devider_flex_1{
+.viewer_flex{
     flex: 1;
 }
 .container_list_showblock{
