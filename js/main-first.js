@@ -4,6 +4,7 @@
 
 var par = document.getElementById('main-first-inner');
 
+
 function createItem(dex){
     var con = document.createElement('img');
     con.src = "./image/mong.jpg";
@@ -21,6 +22,7 @@ var start = (function (){
     while(count){
         if(count == 3){
             var top = createItem(count);
+            top.id = "center";
             top.style.zIndex = "1000";
             par.appendChild(top);
         }
@@ -50,4 +52,10 @@ var start = (function (){
     }
 })();
 
+var moveRight = (function () {
 
+})();
+
+var moveLeft = (function () {
+
+})();

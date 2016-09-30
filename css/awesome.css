@@ -82,5 +82,5 @@ body{
 }
 
 .main-first-image{
-    width: 200px;
+    position: relative;
 }

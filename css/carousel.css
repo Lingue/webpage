@@ -1,0 +1,31 @@
+section, footer, nav {
+    display: block;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    -webkit-text-size-adjust: none;
+    color: #333;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px;
+}
+span{
+    display: inline-block;
+}
+#disclaimer {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+#container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+figure {
+    margin: 0;
+}
+button{
+    background-color: white;
+    border: 0;
+}
